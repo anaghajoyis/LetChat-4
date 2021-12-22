@@ -1,0 +1,38 @@
+body
+{
+background-image: linear-gradient(to right top, #bdb2ff, #ffc6ff,#c0fdff);
+text-align: center;
+align-items: center;
+}
+#maindiv{
+    color: #bdb2ff;
+    background-color:black;
+    border-radius: 20px;
+}
+#sub{
+    background-color:black;
+    border-color: blueviolet;
+    height: 50px;
+    width: 200px;
+}
+#topDiv{
+    background-color:black;
+    border-color: blueviolet;
+    color: #ffc6ff;  
+}
+#logou{
+    background-color:rgb(255, 0, 0);
+    color:rgb(169, 155, 248);
+}
+#addr{
+    background-color: rgb(169, 155, 248);
+    color: rgb(255, 0, 0);
+}
+#rname{
+    background-color:royalblue;
+    color: skyblue;
+}
+#logos{
+    height: 200px;
+    width: 200px;
+}
