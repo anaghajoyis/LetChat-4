@@ -1,22 +1,36 @@
 <html>
-    <head>
-        <title>LetChat! Find a room!</title>
-        <link rel="stylesheet" type="text/css" href="kwitter.css">
-        <script src="kwitter_room.js"></script>
-    </head>
-    <body>
-        <span>
+
+<head>
+    <title>LetChat! Find a room!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="kwitter.css">
+</head>
+
+<body>
+    <span>
         <h1 class="title">LetChat Web app <img id="logos" src="https://api.freelogodesign.org/files/afdb1d705e9d4bba90e36f2b8cba54e2/thumb/logo_200x200.png?v=0"> </h1> 
         
         </span>
-        <div id="topDiv">
-            <h1 id="header" onload="au()"></h1>
-            <input type="text" id="rname" class="form-control">
-            <button id="addr" onclick="addRoom()">Add Room!</button>
-            <button id="logou" onclick="logout()">Log out! <img style=height:10px; width="10px" src="https://media.istockphoto.com/vectors/vector-shut-down-icon-vector-id453956911?b=1&k=20&m=453956911&s=170667a&w=0&h=4AHve4qitXAuCd8MoqmB-Aa31qZWGOn90cCc1HBgAuU="></button>  
-        </div>
-        <div id="rooms" style="background-color:black;">
-            <h2 style="color: white;">ROOMS!</h2>
-        </div>     
-    </body>
+    <div id="topDiv">
+        <h1 id="header"></h1>
+        <input type="text" id="rname" class="form-control">
+        <button id="addr" onclick="addRoom()">Add Room!</button>
+        <button id="logou" onclick="logout()">Log out! <img style=height:10px; width="10px" src="https://media.istockphoto.com/vectors/vector-shut-down-icon-vector-id453956911?b=1&k=20&m=453956911&s=170667a&w=0&h=4AHve4qitXAuCd8MoqmB-Aa31qZWGOn90cCc1HBgAuU="></button>
+    </div>
+    <div id="rooms" style="background-color:black;">
+        <h2 style="color: white;">ROOMS!</h2>
+    </div>
+    <script src="kwitter_room.js"></script>
+</body>
+
 </html>
